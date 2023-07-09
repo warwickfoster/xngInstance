@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 sp1 (http://www.altova.com) by Warwick Foster (Australian Taxation Office) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Resources">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Cube" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="File" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="Set" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="Object" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="baseType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="id" type="xs:string" use="optional"/>
+				<xs:attribute name="name" type="xs:string" use="optional"/>
+				<xs:attribute name="type" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="File" type="xs:string"/>
+	<xs:element name="Object">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="child" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:ID"/>
+			<xs:attribute name="override" type="xs:boolean"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="child"/>
+	<xs:element name="Datatype" type="baseType" substitutionGroup="child"/>
+	<xs:element name="Enum" type="baseType" substitutionGroup="child"/>
+	<xs:element name="Label" type="baseType" substitutionGroup="child"/>
+	<!-- Context Instance ..  Not Set
+	<xs:element name="Set">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element name="Set" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="Dimension" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:ID"/>
+			<xs:attribute name="ref" type="xs:IDREF"/>
+		</xs:complexType>
+	</xs:element>-->
+	<xs:element name="Cube" substitutionGroup="child">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Dimension" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="nature">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="positive"/>
+						<xs:enumeration value="negative"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="name" type="xs:ID"/>
+			<xs:attribute name="ref" type="xs:IDREF"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Dimension">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DomainMember" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="ref" type="xs:IDREF"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DomainMember">
+		<xs:complexType>
+			<xs:attribute name="ref" type="xs:IDREF" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -8,7 +8,6 @@
       <xbrli:identifier scheme="31321321">http://www.ato.gov.au/tfn</xbrli:identifier>
       <xbrli:segment>
         <xbrldi:explicitMember dimension="trad:Region">trad:WesternAustralia</xbrldi:explicitMember>		
-        <xbrldi:explicitMember dimension="trad:EmployerType">trad:NonGovernmentEntity</xbrldi:explicitMember>
       </xbrli:segment>
     </xbrli:entity>
     <xbrli:period>

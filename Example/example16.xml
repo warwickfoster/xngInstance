@@ -7,7 +7,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g1"/>
+		<my:RevenueGroup group="g1"/>
 	</my:Revenue.Amount>
 	<my:Expense.Amount value="50000">
 		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
@@ -15,7 +15,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g1"/>
+		<my:RevenueGroup group="g1"/>
 	</my:Expense.Amount>
 	
 	<my:Revenue.Amount value="200000">
@@ -24,7 +24,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g2"/>
+		<my:RevenueGroup group="g2"/>
 	</my:Revenue.Amount>	
 	<my:Expense.Amount value="750000">
 		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
@@ -32,7 +32,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g2"/>
+		<my:RevenueGroup group="g2"/>
 	</my:Expense.Amount>
 	
 	<my:Revenue.Amount value="250000">
@@ -41,7 +41,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g3"/>
+		<my:RevenueGroup group="g3"/>
 	</my:Revenue.Amount>	
 	<my:Expense.Amount value="50000">
 		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
@@ -49,7 +49,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g3"/>
+		<my:RevenueGroup group="g3"/>
 	</my:Expense.Amount>
 	
 	<my:Revenue.Amount value="100000">
@@ -58,7 +58,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g4"/>
+		<my:RevenueGroup group="g4"/>
 	</my:Revenue.Amount>
 	<my:Expense.Amount value="50000">
 		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
@@ -66,7 +66,7 @@
 		<xng:StartDate value="2010-10-01"/>
 		<xng:EndDate value="2010-12-30"/>
 		<xng:Unit value="iso4217:AUD"/>
-		<my:RevenueGroup name="g4"/>
+		<my:RevenueGroup group="g4"/>
 	</my:Expense.Amount>
 	
 </xng:Document>

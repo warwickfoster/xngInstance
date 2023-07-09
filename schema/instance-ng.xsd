@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" targetNamespace="http://www.xbrl.org/x-nextgeneration/" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:element name="Document">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="xng:child" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="child" abstract="true"/>
+	<xs:element name="Facet" substitutionGroup="xng:child">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="xng:child" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="nameref" type="xs:IDREF"/>
+			<xs:attribute name="group" type="xs:string"/>
+			<xs:attribute name="name" type="xs:ID"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="factObject" substitutionGroup="xng:child">
+	  <xs:complexType mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+		  <xs:element ref="xng:child"/>
+		</xs:choice>
+		<xs:attribute name="facetref" type="xs:IDREF"/>
+		<xs:attribute name="group" type="xs:string"/>
+		<xs:attribute name="isGroup" type="xs:boolean"/>
+		<xs:attribute name="value" type="xs:string"/>
+	  </xs:complexType>
+	</xs:element>
+	
+	<!-- Default Context Objects -->
+	<xs:element name="Unit" substitutionGroup="xng:factObject"/>
+	<xs:element name="StartDate" substitutionGroup="xng:factObject"/>
+	<xs:element name="EntityValue" substitutionGroup="xng:factObject"/>
+	<xs:element name="EntityType" substitutionGroup="xng:factObject"/>
+	<xs:element name="EndDate" substitutionGroup="xng:factObject"/>
+</xs:schema>

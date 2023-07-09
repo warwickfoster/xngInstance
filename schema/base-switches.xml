@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<Object name="StartDate">
+		<HasEntityDetails>false</HasEntityDetails>
+		<HasPeriod>false</HasPeriod>
+		<HasValue>true</HasValue>
+	</Object>
+	<Object name="EndDate">
+		<HasEntityDetails>false</HasEntityDetails>
+		<HasPeriod>false</HasPeriod>
+		<HasValue>true</HasValue>
+	</Object>
+	<Object name="Unit">
+		<HasEntityDetails>false</HasEntityDetails>
+		<HasPeriod>false</HasPeriod>
+		<HasValue>true</HasValue>
+	</Object>
+	<Object name="EntityValue">
+		<HasEntityDetails>false</HasEntityDetails>
+		<HasPeriod>false</HasPeriod>
+		<HasValue>true</HasValue>
+	</Object>
+	<Object name="EntityType">
+		<HasEntityDetails>false</HasEntityDetails>
+		<HasPeriod>false</HasPeriod>
+		<HasValue>true</HasValue>
+	</Object>
+</Resources>

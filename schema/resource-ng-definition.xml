@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="resource-ng.xsd">
+	<Object name="xng:Unit"/>
+	<Object name="xng:StartDate"/>
+	<Object name="xng:EntityValue"/>
+	<Object name="xng:EntityType"/>
+	<Object name="xng:EndDate"/>
+</Resources>

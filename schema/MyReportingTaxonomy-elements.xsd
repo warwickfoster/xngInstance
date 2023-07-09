@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:my="http://www.MyNamespace/" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" targetNamespace="http://www.MyNamespace/">
+	<xs:import namespace="http://www.xbrl.org/x-nextgeneration/" schemaLocation="instance-ng.xsd"/>
+	<xs:element name="Taxable.Code" substitutionGroup="xng:factObject"/>
+	<xs:element name="Taxable.Amount" substitutionGroup="xng:factObject"/>
+	<xs:element name="Region" substitutionGroup="xng:factObject"/>
+	<xs:element name="EmployerType" substitutionGroup="xng:factObject"/>
+	<xs:element name="Year" substitutionGroup="xng:factObject"/>
+	<xs:element name="Revenue.Amount" substitutionGroup="xng:factObject"/>
+	<xs:element name="Expense.Amount" substitutionGroup="xng:factObject"/>
+	<xs:element name="RevenueGroup" substitutionGroup="xng:factObject"/>
+	<xs:element name="PostalAddressGroup" substitutionGroup="xng:factObject"/>
+	<xs:element name="ResidentialAddressGroup" substitutionGroup="xng:factObject"/>
+</xs:schema>

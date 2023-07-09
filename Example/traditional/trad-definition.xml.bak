@@ -13,8 +13,7 @@
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="hyper1" xlink:to="Region" xlink:title="definition: hyper1 to Region" order="1.0"/>
     <link:loc xlink:type="locator" xlink:href="trad.xsd#trad_WesternAustralia" xlink:label="WesternAustralia" xlink:title="WesternAustralia"/>
     <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="Region" xlink:to="WesternAustralia" xlink:title="definition: Region to WesternAustralia" order="1.0"/>
-  </link:definitionLink>  
-
+  </link:definitionLink>
   <link:definitionLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/deflink">
     <link:loc xlink:type="locator" xlink:href="trad.xsd#trad_abstract" xlink:label="abstract" xlink:title="abstract"/>
     <link:loc xlink:type="locator" xlink:href="trad.xsd#trad_Taxable.Code" xlink:label="Taxable.Code" xlink:title="Taxable.Code"/>
