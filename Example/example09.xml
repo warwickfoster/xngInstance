@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xng:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://www.MyNamespace/" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" xsi:schemaLocation="http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd">
+	
+	<my:Taxable.Amount value="500">
+		<xng:Facet name="WA-NGE">
+			<my:Region value="WesternAustralia"/>
+			<my:EmployerType value="NonGovernmentEntity"/>
+		</xng:Facet>
+		<xng:Facet name="Identity">
+			<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+			<xng:EntityValue value="321321321"/>
+			<xng:StartDate value="2010-10-01"/>
+			<xng:EndDate value="2010-12-30"/>
+		</xng:Facet>
+		<xng:Unit value="iso4217:AUD"/>
+	</my:Taxable.Amount>
+	
+	<my:Taxable.Code value="CGT.Code">
+		<xng:Facet nameref="WA-NGE"/>
+		<xng:Facet nameref="Identity"/>
+	</my:Taxable.Code>
+	
+</xng:Document>

@@ -1,0 +1,42 @@
+	<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd" xmlns:trad="http://www.traditionalSyntax.com" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldi="http://xbrl.org/2006/xbrldi">
+  <link:schemaRef xlink:type="simple" xlink:href="trad.xsd"/>
+
+  <xbrli:context id="Context_Instant_WesternAustralia">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.ato.gov.au/tfn">321321321</xbrli:identifier>
+      <xbrli:segment>
+        <xbrldi:explicitMember dimension="trad:Region">trad:WesternAustralia</xbrldi:explicitMember>
+      </xbrli:segment>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2014-06-01</xbrli:startDate>
+      <xbrli:endDate>2014-06-02</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+
+  <xbrli:unit id="u001">
+    <xbrli:measure>iso4217:AUD</xbrli:measure>
+  </xbrli:unit>
+
+  <trad:Group>
+    <trad:Revenue.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">300000</trad:Revenue.Amount>
+    <trad:Expense.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">50000</trad:Expense.Amount>
+  </trad:Group>
+
+  <trad:Group>
+    <trad:Revenue.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">200000</trad:Revenue.Amount>
+    <trad:Expense.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">750000</trad:Expense.Amount>
+  </trad:Group>
+
+  <trad:Group>
+    <trad:Revenue.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">250000</trad:Revenue.Amount>
+    <trad:Expense.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">50000</trad:Expense.Amount>
+  </trad:Group>
+
+  <trad:Group>
+    <trad:Revenue.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">100000</trad:Revenue.Amount>
+    <trad:Expense.Amount decimals="0" contextRef="Context_Instant_WesternAustralia" unitRef="u001">50000</trad:Expense.Amount>
+  </trad:Group>
+
+</xbrli:xbrl>

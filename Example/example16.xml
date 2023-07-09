@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xng:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://www.MyNamespace/" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" xsi:schemaLocation="http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd">
+
+	<my:Revenue.Amount value="300000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g1"/>
+	</my:Revenue.Amount>
+	<my:Expense.Amount value="50000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g1"/>
+	</my:Expense.Amount>
+	
+	<my:Revenue.Amount value="200000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g2"/>
+	</my:Revenue.Amount>	
+	<my:Expense.Amount value="750000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g2"/>
+	</my:Expense.Amount>
+	
+	<my:Revenue.Amount value="250000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g3"/>
+	</my:Revenue.Amount>	
+	<my:Expense.Amount value="50000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g3"/>
+	</my:Expense.Amount>
+	
+	<my:Revenue.Amount value="100000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g4"/>
+	</my:Revenue.Amount>
+	<my:Expense.Amount value="50000">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+		<my:RevenueGroup name="g4"/>
+	</my:Expense.Amount>
+	
+</xng:Document>

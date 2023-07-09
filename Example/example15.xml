@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xng:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://www.MyNamespace/" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" xsi:schemaLocation="http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd">
+
+	<xng:EntityType value="http://www.ato.gov.au/tfn">
+		<xng:EntityValue value="321321321">
+			<xng:StartDate value="2010-10-01">
+				<xng:EndDate value="2010-12-30">
+					<xng:Unit value="iso4217:AUD">
+					
+						<my:Revenue.Amount value="300000" group="g1"/>
+						<my:Expense.Amount value="50000" group="g1"/>
+					
+						<my:Revenue.Amount value="200000" group="g2"/>
+						<my:Expense.Amount value="750000" group="g2"/>
+					
+						<my:Revenue.Amount value="250000" group="g3"/>
+						<my:Expense.Amount value="50000" group="g3"/>
+					
+						<my:Revenue.Amount value="100000" group="g4"/>
+						<my:Expense.Amount value="50000" group="g4"/>
+					
+					</xng:Unit>
+				</xng:EndDate>
+			</xng:StartDate>
+		</xng:EntityValue>
+	</xng:EntityType>
+	
+</xng:Document>

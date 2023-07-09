@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xng:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://www.MyNamespace/" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" xsi:schemaLocation="http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-address.xsd">
+
+	<xng:Facet name="IdentityAndUnit">
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>		
+	</xng:Facet>
+		
+	<my:PostalAddress isGroup="true">
+		<my:BuildingNumber facetref="IdentityAndUnit">75</my:BuildingNumber>
+		<my:StreetName facetref="IdentityAndUnit">Smith</my:StreetName>
+		<my:StreetType facetref="IdentityAndUnit">Road</my:StreetType>		
+	</my:PostalAddress>
+	
+	<my:ResidentialAddress>
+		<my:BuildingNumber facetref="IdentityAndUnit">75</my:BuildingNumber>
+		<my:StreetName facetref="IdentityAndUnit">Smith</my:StreetName>
+		<my:StreetType facetref="IdentityAndUnit">Road</my:StreetType>		
+	</my:ResidentialAddress>
+	
+</xng:Document>	

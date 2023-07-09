@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xng:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://www.MyNamespace/" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" xsi:schemaLocation="http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd">
+
+	<xng:Facet name="IdentityAndUnit">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+	</xng:Facet>
+	
+	<my:Revenue.Amount facetref="IdentityAndUnit" value="300000">
+		<my:RevenueGroup group="g1"/>
+	</my:Revenue.Amount>	
+	<my:Expense.Amount facetref="IdentityAndUnit" value="50000">
+		<my:RevenueGroup group="g1"/>
+	</my:Expense.Amount>
+	
+	<my:Revenue.Amount facetref="IdentityAndUnit" value="200000">
+		<my:RevenueGroup group="g2"/>
+	</my:Revenue.Amount>	
+	<my:Expense.Amount facetref="IdentityAndUnit" value="750000">
+		<my:RevenueGroup group="g2"/>
+	</my:Expense.Amount>
+	
+	<my:Revenue.Amount facetref="IdentityAndUnit" value="250000">
+		<my:RevenueGroup group="g3"/>
+	</my:Revenue.Amount>
+	<my:Expense.Amount facetref="IdentityAndUnit" value="50000">
+		<my:RevenueGroup group="g3"/>
+	</my:Expense.Amount>
+	
+	<my:Revenue.Amount facetref="IdentityAndUnit" value="100000">
+		<my:RevenueGroup group="g4"/>
+	</my:Revenue.Amount>
+	<my:Expense.Amount facetref="IdentityAndUnit" value="50000">
+		<my:RevenueGroup group="g4"/>
+	</my:Expense.Amount>
+	
+</xng:Document>

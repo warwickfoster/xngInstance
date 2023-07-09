@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xng:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://www.MyNamespace/" xmlns:xng="http://www.xbrl.org/x-nextgeneration/" xsi:schemaLocation="http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-address.xsd">
+
+	<xng:Facet name="IdentityAndUnit">
+		<xng:EntityType value="http://www.ato.gov.au/tfn"/>
+		<xng:EntityValue value="321321321"/>
+		<xng:StartDate value="2010-10-01"/>
+		<xng:EndDate value="2010-12-30"/>
+		<xng:Unit value="iso4217:AUD"/>
+	</xng:Facet>
+		
+	<my:PostalAddress>
+		<my:BuildingNumber facetref="IdentityAndUnit">75</my:BuildingNumber>
+		<my:StreetName facetref="IdentityAndUnit">Smith</my:StreetName>
+		<my:StreetType facetref="IdentityAndUnit">Road</my:StreetType>
+		<my:Suburb facetref="IdentityAndUnit">Smithfield</my:Suburb>
+		<my:State facetref="IdentityAndUnit">New South Wales</my:State>
+		<my:PostCode facetref="IdentityAndUnit">2123</my:PostCode>
+		<my:Country facetref="IdentityAndUnit">Australia</my:Country>
+	</my:PostalAddress>
+	
+	<my:ResidentialAddress isGroup="true">
+		<my:BuildingNumber facetref="IdentityAndUnit">75</my:BuildingNumber>
+		<my:StreetName facetref="IdentityAndUnit">Smith</my:StreetName>
+		<my:StreetType facetref="IdentityAndUnit">Road</my:StreetType>
+		<my:Suburb facetref="IdentityAndUnit">Smithfield</my:Suburb>
+		<my:State facetref="IdentityAndUnit">New South Wales</my:State>
+		<my:PostCode facetref="IdentityAndUnit">2123</my:PostCode>
+		<my:Country facetref="IdentityAndUnit">Australia</my:Country>
+	</my:ResidentialAddress>
+	
+</xng:Document>	
