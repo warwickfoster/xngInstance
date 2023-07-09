@@ -60,7 +60,7 @@ td
 <LI>Facts will be related directly to Facts by Facet Relationships.</LI>
 <LI>Identity fields, Date fields and dimensions fields are not mandatory by Scheme design. They can be mandatory based on a secondary parser in the same was could be described by XBRL Formula or XML Schematron XSD verifier.</LI>
 <LI>A Fact can be related to another Fact by a Grouping relationship. This is a secondary part of a Facet. This can be used to Group sets of repeating fields.</LI>
-<img src="example\Images\UML Model of Instance.png"/>
+<img src="https://github.com/warwickfoster/xngInstance/tree/main/Example/Images/UML Model of Instance.png"/>
 <H3>A basic XBRL schema</H3>
 <P>Here is a basic XBRL Schema set up using the XBRL 2.1 and XBRL Dimension 1.0 specification.</P>
 <a id="traditional00"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
@@ -68,7 +68,7 @@ td
 <P>This is the normal world of XBRL.</P>
 <P>This is a basic instance document reporting two facts. One is a Taxable.Code and the other is a Taxable.Amount. Following normal XBRL Instance specification requirements there is a context section which specifies the: </P>
 <P>These fields are</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\traditional\trad.xml">..\Example\traditional\trad.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampletraditional\trad.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampletraditional\trad.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;!--&nbsp;Generated&nbsp;by&nbsp;Fujitsu&nbsp;Interstage&nbsp;XWand&nbsp;B0166_M01&nbsp;--&gt;<br/></td></tr>
@@ -111,7 +111,7 @@ td
 <P>All elements (EntityType, EntityValue, StartDate, EndDate, Unit, Region, EmployerType, Taxable.Amount and Taxable.Code) derive from the same schema base type called "xng:baseObject".</P>
 <P>The xng:baseObject has a value attribute which is always string and also has the ability to have a child which is also of type xng:baseObject.</P>
 <P>The model of the basetype element relating to another baseObject element results in a cyclic model where the data can be turned around a number of ways to produce the same result.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example00.xml">..\Example\example00.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample00.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample00.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -147,7 +147,7 @@ td
 </table></ol>
 </td></tr></table>
 <P>This instance has the following resulting relationships.</P>
-<img src="example\Images\FirstInstanceExample.png"/>
+<img src="https://github.com/warwickfoster/xngInstance/tree/main/Example/Images/FirstInstanceExample.png"/>
 <P>Out goal is to enable this relationship netwrok by different file patterns.</P>
 <P>The presentation of <a href="#example00"/>example00</a> as the first example was to show a similar to the current XBRL instance syntax. This model though can turn the information around in a number of ways that all result in the same set of relationships.</P>
 <P>Each of the Context parts EntityType, EntityValue, InstantDate, StartDate and EndDate and separately Unit will be referred to as Facets of the Fact. As long as the Fact can discover the Facet in its hierarchy (either above or below or alongside) then that Facet will be linked the Fact.</P>
@@ -160,7 +160,7 @@ td
 <P>Following the cyclic model the base object can refer to any other base object. Just as long as all of the conceptualizing Facets and dimension elements are discoverable either as an ancestor or as a child the conceptualization of the Fact is complete.</P>
 <P>Articulating each Facet as a child aspect of the Fact allows for the full details of the Fact to be expressed in a simple form.</P>
 <P>When Streaming large XML documents there is no longer a document ordering issue as the demoralized Fact is now complete when it occurs.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example01.xml">..\Example\example01.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample01.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample01.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -195,7 +195,7 @@ td
 <a id="example02"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Fully Inverted Facets</B></P>
 <P>All previous children of the Fact are now parents.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example02.xml">..\Example\example02.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample02.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample02.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -228,7 +228,7 @@ td
 <P><B>Dimensions as parents of a Fact and Context information as children of a Fact</B></P>
 <P>In this example the two dimensions have been set up as a parent to the Fact. Note that the value of the dimensions is set to a string which has a value of the URI of the another explicitly declared object. Because it is referred to as a string it is not parsed as a URI value by the schema. This is a secondary process.</P>
 <P>Similarly the dates on the period elements and the enumeration on the Unit are all accepted at this stage but are parsed by a secondary process.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example03.xml">..\Example\example03.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample03.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample03.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -265,7 +265,7 @@ td
 <P><B>First use of a Facet to refer to reusable objects.</B></P>
 <P>Facet of the two dimensions. This can be the child of the Fact.</P>
 <P>As a syntax tool the Facet results in the two dimensions being able to be children of the Fact by inference.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\Example04.xml">..\Example\Example04.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/ExampleExample04.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/ExampleExample04.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -303,7 +303,7 @@ td
 <a id="example04b"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Sets as the parent of a Fact </B></P>
 <P>In this example the relationship is turned around similar to the cyclic baseType with the Facet being the parent of the Fact. This results in the Fact still being able to discover the two dimensions as parents.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\Example04b.xml">..\Example\Example04b.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/ExampleExample04b.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/ExampleExample04b.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -339,7 +339,7 @@ td
 <a id="example05"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Two Sets for the Dimensions and for the Identity</B></P>
 <P>In this example the identify Facets are also referred to in a Facet and are referable from the Fact.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example05.xml">..\Example\example05.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample05.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample05.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -379,7 +379,7 @@ td
 <a id="example06"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Sets applied as parents of the Facts</B></P>
 <P>Using the same sets as in <a href="#example05"/>example05</a> the sets can now be used as parents of the Facts</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example06.xml">..\Example\example06.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample06.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample06.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -415,7 +415,7 @@ td
 <a id="example07"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Two large sets that are applied to the two Facts</B></P>
 <P>The Sets will be logically collapsed from the point of view of the static reference to the Facet object. Further down we will look at the idea of an implied grouping. Here focuses on the similarity between were we end up with here and the traditional XBRL script.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example07.xml">..\Example\example07.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample07.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample07.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -452,7 +452,7 @@ td
 <a id="example08"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Sets within Sets and the setref</B></P>
 <P>In the Facet Identity-Unit-WA-NGE see the set reference to Identity an the separate reference to WA-NGE.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example08.xml">..\Example\example08.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample08.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample08.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -495,7 +495,7 @@ td
 <a id="example09"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Sets created on the fly</B></P>
 <P>This sample is a variation on <a href="#example05"/>example05</a> where the sets from the top of the document are constructed as children of the owing Fact and is then referenced as the child of another Fact.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example09.xml">..\Example\example09.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample09.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample09.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -535,7 +535,7 @@ td
 <a id="trad00"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Traditional tuple grouping</B></P>
 <P>Here there are two groups of address fields related to a parent grouping object. This relationship is explicitly modeled in the schema so the knowledge of the relationship is explict. </P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\traditional\TupleAddresses.xml">..\Example\traditional\TupleAddresses.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampletraditional\TupleAddresses.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampletraditional\TupleAddresses.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xbrli:xbrl xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd&quot; xmlns:trad=&quot;http://www.traditionalSyntax.com&quot; xmlns:link=&quot;http://www.xbrl.org/2003/linkbase&quot; xmlns:iso4217=&quot;http://www.xbrl.org/2003/iso4217&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns:xbrldt=&quot;http://xbrl.org/2005/xbrldt&quot; xmlns:xbrli=&quot;http://www.xbrl.org/2003/instance&quot; xmlns:xbrldi=&quot;http://xbrl.org/2006/xbrldi&quot;&gt;<br/></td></tr>
@@ -612,7 +612,7 @@ td
 <a id="trad02"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Grouping Models</B></P>
 <P>Looking at a cut down example,will be able to demonstrate the linkages more easily. </P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\Example\example11c.xml">..\Example\example11c.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample11c.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample11c.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-address.xsd&quot;&gt;<br/></td></tr>
@@ -643,16 +643,16 @@ td
 <P>Here are the two information models that come from both sets. The first set is the Postal model which does has the Fact Grouping set.</P>
 <P>You can see the linkaged emphasised between the Building Number, Street Name and Street Type.</P>
 <P>Notice as well that the Start Date and End Dates are not connected. </P>
-<img src="example\Images\Simple Postal.png"/>
+<img src="https://github.com/warwickfoster/xngInstance/tree/main/Example/Images/Simple Postal.png"/>
 <P>The second image here is for the Residential Address and the Fact Grouping is not set. the three fields are not linked together.</P>
-<img src="example\Images\Simple Residential.png"/>
+<img src="https://github.com/warwickfoster/xngInstance/tree/main/Example/Images/Simple Residential.png"/>
 <P>Here is the linkages on the full address block to the contextual facts. </P>
-<img src="example\Images\Full Postal Address.png"/>
+<img src="https://github.com/warwickfoster/xngInstance/tree/main/Example/Images/Full Postal Address.png"/>
 <P>This can be taken further in a set of Revenue reporting. In the following lets look at a traditional XBRL for a set of financial reports. It shows the relationship between a year value, with total revenue and total expense amount.</P>
 <a id="example10"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Grouping in place of a tuple</B></P>
 <P>This functionality is in parallel with the same functionality in classic XBRL. Occurrence and existence can be handled by formula assertion.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\../Example\traditional\TupleTrad.xml">../Example\traditional\TupleTrad.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\../https://github.com/warwickfoster/xngInstance/tree/main/Exampletraditional\TupleTrad.xml">../https://github.com/warwickfoster/xngInstance/tree/main/Exampletraditional\TupleTrad.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xbrli:xbrl xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd&quot; xmlns:trad=&quot;http://www.traditionalSyntax.com&quot; xmlns:link=&quot;http://www.xbrl.org/2003/linkbase&quot; xmlns:iso4217=&quot;http://www.xbrl.org/2003/iso4217&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns:xbrldt=&quot;http://xbrl.org/2005/xbrldt&quot; xmlns:xbrli=&quot;http://www.xbrl.org/2003/instance&quot; xmlns:xbrldi=&quot;http://xbrl.org/2006/xbrldi&quot;&gt;<br/></td></tr>
@@ -805,7 +805,7 @@ td
 <a id="example12"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Group as attribute of Fact</B></P>
 <P>Example of the group as an attribute of the Fact.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\example\example12.xml">..\example\example12.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample12.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample12.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
@@ -840,7 +840,7 @@ td
 <a id="example13"/><table width=80% border=1 cellspacing=0 cellpadding=0 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'><tr><td>
 <P><B>Group as child of Fact</B></P>
 <P>Example of the group as a child of the Fact. In this scenario with the group being empty there must be a name attribute set.</P>
-<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\example\example13.xml">..\example\example13.xml</a></P>
+<P><B>Filename: </B><a href="C:\Users\warwi\OneDrive - xtek.solutions\Projects\XNG\doco\..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample13.xml">..\https://github.com/warwickfoster/xngInstance/tree/main/Exampleexample13.xml</a></P>
 <ol><table width=80% border=1 cellspacing=0 cellpadding=3 style='margin-left:39.4pt;border-collapse:collapse;border:none;mso-border-alt: solid gray .5pt;mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.5pt solid gray;mso-border-insidev:.5pt solid gray'>
 <tr><td height=15 align="center" width="50">1.</td><td>&lt;?xml&nbsp;version=&quot;1.0&quot;&nbsp;encoding=&quot;UTF-8&quot;?&gt;<br/></td></tr>
 <tr><td height=15 align="center" width="50">2.</td><td>&lt;xng:Document xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://www.MyNamespace/&quot; xmlns:xng=&quot;http://www.xbrl.org/x-nextgeneration/&quot; xsi:schemaLocation=&quot;http://www.MyNamespace/ ../Schema/MyReportingTaxonomy-elements.xsd&quot;&gt;<br/></td></tr>
